@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Pavel Usachev <webcodekeeper@hotmail.com>
+ * @copyright Copyright (c) 2017, Pavel Usachev
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="alevel" translate="label" sortOrder="1000">
+            <label>A-Level</label>
+        </tab>
+        <section
+                id="alevel_uicomponent"
+                translate="label"
+                type="text"
+                sortOrder="100"
+                showInDefault="1"
+                showInWebsite="1"
+                showInStore="1"
+        >
+            <label>UiComponent</label>
+            <tab>alevel</tab>
+            <resource>ALevel_UiComponent::system_config</resource>
+            <group
+                    id="general"
+                    translate="label"
+                    type="text"
+                    sortOrder="10"
+                    showInDefault="1"
+                    showInWebsite="1"
+                    showInStore="1"
+            >
+                <label>General</label>
+                <field
+                        id="is_enabled"
+                        translate="label"
+                        type="select"
+                        sortOrder="10"
+                        showInDefault="1"
+                        showInWebsite="1"
+                        showInStore="1"
+                >
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field
+                        id="title"
+                        translate="label"
+                        type="text"
+                        sortOrder="10"
+                        showInDefault="1"
+                        showInWebsite="1"
+                        showInStore="1"
+                >
+                    <label>Title</label>
+                </field>
+                <field
+                        id="message"
+                        translate="label"
+                        type="textarea"
+                        sortOrder="10"
+                        showInDefault="1"
+                        showInWebsite="1"
+                        showInStore="1"
+                >
+                    <label>Message</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Pavel Usachev <webcodekeeper@hotmail.com>
+ * @copyright Copyright (c) 2019, Pavel Usachev
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block
+                    class="Magento\Framework\View\Element\Template"
+                    name="ui_test"
+                    template="ALevel_UiComponent::js.phtml"
+                    after="-"
+            >
+                <arguments>
+                    <argument
+                            name="view_model"
+                            xsi:type="object"
+                    >ALevel\UiComponent\Api\ViewModel\ConfigInterface</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
